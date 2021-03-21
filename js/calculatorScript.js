@@ -20,7 +20,6 @@ function operationNumber(operationId) {
     numberStringOne = ""
     finalOperation = operationId    
     }
-    debugger;
     if(operationId =="eqResult") {
             
         if (finalOperation == "+") {
