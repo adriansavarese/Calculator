@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <table>
+        <h1 id="htmlResult">resultado</h1>
+        <tr>
+            <td><button type="button" class="botones" onclick="">CE</button></td>
+            <td><button type="button" class="botones" onclick="">C</button></td>
+            <td><button type="button" class="botones" onclick="">Del</button></td>
+            <td><button type="button" class="botones" onclick="operationNumber('d')">/</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="botones" onclick="captureNumber(7)">7</button></td>
+            <td><button type="button" class="botones" onclick="captureNumber(8)">8</button></td>
+            <td><button type="button" class="botones" onclick="captureNumber(9)">9</button></td>
+            <td><button type="button" class="botones" onclick="operationNumber('x')">x</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="botones" onclick="captureNumber(4)">4</button></td>
+            <td><button type="button" class="botones" onclick="captureNumber(5)">5</button></td>
+            <td><button type="button" class="botones" onclick="captureNumber(6)">6</button></td>
+            <td><button type="button" class="botones" onclick="operationNumber('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="botones" onclick="captureNumber(1)">1</button></td>
+            <td><button type="button" class="botones" onclick="captureNumber(2)">2</button></td>
+            <td><button type="button" class="botones" onclick="captureNumber(3)">3</button></td>
+            <td><button type="button" class="botones" onclick="operationNumber('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="botones" onclick="">+/-</button></td>
+            <td><button type="button" class="botones" onclick="captureNumber(0)">0</button></td>
+            <td><button type="button" class="botones" onclick="">,</button></td>
+            <td><button type="button" class="botones" onclick="operationNumber('eqResult')">=</button></td>
+        </tr>
+    </table>
+    <script src="js/calculatorScript.js"></script>
+</body>
+</html>
