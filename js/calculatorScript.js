@@ -15,6 +15,7 @@ function captureNumber(numero) {
 function operationNumber(operationId) {
     
     if (operationId =="d" || operationId =="x" || operationId =="-" || operationId =="+") {
+    subresult.innerHTML = numberStringOne + operationId;
     numberStringTwoToInt = numberStringOneToInt;
     numberStringOneToInt = 0;
     numberStringOne = "";
@@ -25,9 +26,12 @@ function operationNumber(operationId) {
         numberStringTwoToInt = 0;
         numberStringOne = "";
         totalresult.innerHTML = numberStringOneToInt;
+        subresult.innerHTML = numberStringOneToInt;
     }
     if(operationId =="eqResult") {
-            
+        numberStringOne = String (numberStringOneToInt);
+        var numberStringTwo = String (numberStringTwoToInt);
+        subresult.innerHTML = numberStringTwoToInt + finalOperation + numberStringOneToInt;        
         if (finalOperation == "+") {
                 numberStringTwoToInt = numberStringTwoToInt + numberStringOneToInt;
                 totalresult.innerHTML = numberStringTwoToInt;
