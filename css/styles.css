@@ -1,44 +1,129 @@
 *{
   margin: 0;
-  padding: 0;
   color: white;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   
+  
 }
-.botones-model-a {
+.number-class {
     background-color: transparent;
     border: none;
-    height: 40px;
-    width: 40px;
-    
+    border-radius: 50%;
+    font-size: 1.1em;
   }
 
-.botones-model-b{
-  background: linear-gradient(-45deg, #f3d654, #e7b13c);
-    border: none;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}  
+.operation-class{
+  background: linear-gradient(-45deg, #a04e35, #fdb51a);
+  border: none;
+  border-radius: 50%;
+  font-size: 0.9em;
+}
+
+.sum-class, .equal-class{
+  background: linear-gradient(-45deg, #E73C7E, #b67d93);
+  border: none;
+  border-radius: 5em;
+  font-size: 1.5em;
+}
+
 body {
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  width: 100vh;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E);
   height: 100vh;
 }
 
 .big-calculator{
-  background-color: #263D5C;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "totalresult totalresult totalresult totalresult totalresult"
+  "subresult subresult subresult subresult subresult"
+  "button-7 button-8 button-9 button-min button-div"
+  "button-4 button-5 button-6 button-plus button-mult"
+  "button-1 button-2 button-3 button-plus button-nega"
+  "button-0 button-comma button-clear button-equal button-equal";
+  background: linear-gradient(-135deg, #263D5C, #152438) ;
   border-color: black;
   border-style: solid;
   border-width: 3px;
   border-radius: 7%;
   width: fit-content;
   height: fit-content;
-}
-h1{
-  font-size: 2em;
+  box-shadow: 2px 2px 2px black;
 }
 
-h2{
+#totalresult {
+  display: flex;
+  font-size: 2em;
+  grid-area: totalresult;
+  align-items: flex-end;
+  flex-flow: row-reverse;
+  font-weight: 300; 
+  padding-right: 0.4em;
+}
+
+#subresult{
+  display: flex;
   font-size: 1em;
+  grid-area: subresult;
+  align-items: baseline;
+  flex-flow: row-reverse;
+  font-weight: 300;
+  padding-right: 0.8em;
+
+}
+
+#button-7{
+  grid-area: button-7;  
+}
+#button-8{
+  grid-area: button-8;  
+}
+#button-9{
+  grid-area: button-9;  
+}
+#button-min{
+  grid-area: button-min;  
+}
+#button-div{
+  grid-area: button-div;  
+}
+#button-4{
+  grid-area: button-4;  
+}
+#button-5{
+  grid-area: button-5;  
+}
+#button-6{
+  grid-area: button-6;  
+}
+#button-plus{
+  grid-area: button-plus;  
+}
+#button-mult{
+  grid-area: button-mult;  
+}
+#button-1{
+  grid-area: button-1;  
+}
+#button-2{
+  grid-area: button-2;  
+}
+#button-3{
+  grid-area: button-3;  
+}
+#button-nega{
+  grid-area: button-nega;  
+}
+#button-0{
+  grid-area: button-0;  
+}
+#button-comma{
+  grid-area: button-comma;  
+}
+#button-clear{
+  grid-area: button-clear;  
+}
+#button-equal{
+  grid-area: button-equal;  
 }

@@ -8,7 +8,7 @@ let finalOperation = ""
 function captureNumber(numero) {
     numberStringOne = numberStringOne + numero
     numberStringOneToInt = parseFloat(numberStringOne)
-    htmlResult.innerHTML = numberStringOne
+    totalresult.innerHTML = numberStringOne
 }
 
 
@@ -24,22 +24,22 @@ function operationNumber(operationId) {
         numberStringOneToInt = 0;
         numberStringTwoToInt = 0;
         numberStringOne = "";
-        htmlResult.innerHTML = numberStringOneToInt;
+        totalresult.innerHTML = numberStringOneToInt;
     }
     if(operationId =="eqResult") {
             
         if (finalOperation == "+") {
                 numberStringTwoToInt = numberStringTwoToInt + numberStringOneToInt;
-                htmlResult.innerHTML = numberStringTwoToInt;
+                totalresult.innerHTML = numberStringTwoToInt;
             } else if (finalOperation =="-") {
                 numberStringTwoToInt = numberStringTwoToInt - numberStringOneToInt;
-                htmlResult.innerHTML = numberStringTwoToInt;
+                totalresult.innerHTML = numberStringTwoToInt;
             } else if (finalOperation =="x") {
                 numberStringTwoToInt = numberStringTwoToInt * numberStringOneToInt;
-                htmlResult.innerHTML = numberStringTwoToInt;
+                totalresult.innerHTML = numberStringTwoToInt;
             } else if (finalOperation =="d") {
                 numberStringTwoToInt = numberStringTwoToInt / numberStringOneToInt;
-                htmlResult.innerHTML = numberStringTwoToInt;
+                totalresult.innerHTML = numberStringTwoToInt;
             } else {
                 alert("Ups, error");
             }
