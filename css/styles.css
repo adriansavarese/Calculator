@@ -52,7 +52,6 @@ body {
   "button-1 button-2 button-3 button-plus button-nega"
   "button-0 button-comma button-clear button-equal button-equal";
   background: #FCFCFC;
-  border-width: 3px;
   border-radius: 7%;
   width: fit-content;
   height: fit-content;
@@ -66,7 +65,6 @@ body {
   grid-area: totalresult;
   align-items: flex-end;
   flex-flow: row-reverse;
-  font-weight: 300; 
   padding-right: 0.4em;
   color: #545454;
 }

@@ -14,13 +14,14 @@ function captureNumber(numero) {
 
 function operationNumber(operationId) {
     
-    if (operationId =="d" || operationId =="x" || operationId =="-" || operationId =="+") {
+    if (operationId =="/" || operationId =="x" || operationId =="-" || operationId =="+") {
     subresult.innerHTML = numberStringOne + operationId;
     numberStringTwoToInt = numberStringOneToInt;
     numberStringOneToInt = 0;
     numberStringOne = "";
     finalOperation = operationId;
     }
+
     if (operationId == "clearAll") {
         numberStringOneToInt = 0;
         numberStringTwoToInt = 0;
@@ -28,6 +29,7 @@ function operationNumber(operationId) {
         totalresult.innerHTML = numberStringOneToInt;
         subresult.innerHTML = numberStringOneToInt;
     }
+
     if(operationId =="eqResult") {
         numberStringOne = String (numberStringOneToInt);
         var numberStringTwo = String (numberStringTwoToInt);
@@ -41,7 +43,7 @@ function operationNumber(operationId) {
             } else if (finalOperation =="x") {
                 numberStringTwoToInt = numberStringTwoToInt * numberStringOneToInt;
                 totalresult.innerHTML = numberStringTwoToInt;
-            } else if (finalOperation =="d") {
+            } else if (finalOperation =="/") {
                 numberStringTwoToInt = numberStringTwoToInt / numberStringOneToInt;
                 totalresult.innerHTML = numberStringTwoToInt;
             } else {
